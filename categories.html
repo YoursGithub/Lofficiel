@@ -22,7 +22,7 @@
             width: 100%;
             padding: 1rem;
             display: flex;
-            justify-content: space-between;
+            /* justify-content: space-between; */
             align-items: center;
             transition: background-color 0.3s;
             z-index: 1000;
@@ -45,14 +45,20 @@
 
         .logo img{
             width : 300px;
+            margin-left: 130px;
         }
 
         .navbar.scrolled .logo {
             display: none;
      }
 
+     .navbar.scrolled .bars i{
+        color: black;
+     }
+
         .nav-links {
             display: flex;
+            justify-content: end;
             gap: 2rem;
         }
 
@@ -164,12 +170,12 @@
         }
 
         @media (max-width: 768px) {
-            .nav-links {
+            .nav-links a{
                 display: none;
             }
 
             .hero-content{
-                margin-top: 250px;
+                margin-top: 500px;
             }
 
             .logo img{
@@ -188,6 +194,10 @@
                 transform: none;
                 left: 0;
             }
+
+            .logo img{
+            margin-left: -50px;
+        }
         }
 
         @media (max-width: 768px) {
@@ -216,7 +226,7 @@
 
         <div class="bars" style="padding: 15px;  color: white;">
             <a href="javascript:void(0)" onclick="toggleSidebar()" style="color: white; text-decoration: none;">
-                <i class="fa fa-bars fa-xl" style="margin-right: 5px;"></i> Menu
+                <i class="fa fa-bars fa-xl" style="margin-right: 5px;"></i>
             </a>
         </div>
     
@@ -261,13 +271,15 @@
         </div>
 
 
-        <div>
-        <a href="#" class="logo"><img src="/images/1615808428-logo-lofficiel.svg" alt="" style="background-position: center;"></a>
-        </div>
-        <div class="nav-links">
-            <a href="#">Menu</a>
-            <a href="#">Buy The Issue</a>
-            <a href="#">France</a>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; box-sizing: border-box; width: 100%;">
+            <a href="#" class="logo" style="flex: 1; text-align: center;">
+                <img src="/images/1615808428-logo-lofficiel.svg" alt="Logo" style="background-position: center; display: inline-block;">
+            </a>
+        
+            <div class="nav-links" style="display: flex; justify-content: flex-end; gap: 10px;">
+                <a href="#" style="color:white; text-decoration: none;  font-size: 16px;">Buy The Issue</a>
+                <a href="#" style="color:white; text-decoration: none; font-size: 16px;">France</a>
+            </div>
         </div>
     </nav>
 
@@ -309,7 +321,7 @@
     </section>
 
 
-<section style="margin-top: 200px;">
+<section style="margin-top: 400px;">
     <div class="section" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 23px; padding: 20px; max-width: 1200px; margin: auto;">
         <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
             <img src="/images/image_23.jpeg" alt="Winter getaway" style="width: 100%; height: 250px;">
