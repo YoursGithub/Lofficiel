@@ -22,7 +22,7 @@
             width: 100%;
             padding: 1rem;
             display: flex;
-            justify-content: space-between;
+            /* justify-content: space-between; */
             align-items: center;
             transition: background-color 0.3s;
             z-index: 1000;
@@ -45,14 +45,20 @@
 
         .logo img{
             width : 300px;
+            margin-left: 130px;
         }
 
         .navbar.scrolled .logo {
             display: none;
      }
 
+     .navbar.scrolled .bars i{
+        color: black;
+     }
+
         .nav-links {
             display: flex;
+            justify-content: end;
             gap: 2rem;
         }
 
@@ -164,7 +170,7 @@
         }
 
         @media (max-width: 768px) {
-            .nav-links {
+            .nav-links a{
                 display: none;
             }
 
@@ -188,6 +194,10 @@
                 transform: none;
                 left: 0;
             }
+
+            .logo img{
+            margin-left: -50px;
+        }
         }
 
         @media (max-width: 768px) {
@@ -216,7 +226,7 @@
 
         <div class="bars" style="padding: 15px;  color: white;">
             <a href="javascript:void(0)" onclick="toggleSidebar()" style="color: white; text-decoration: none;">
-                <i class="fa fa-bars fa-xl" style="margin-right: 5px;"></i> Menu
+                <i class="fa fa-bars fa-xl" style="margin-right: 5px;"></i>
             </a>
         </div>
     
@@ -261,14 +271,17 @@
         </div>
 
 
-        <div>
-        <a href="#" class="logo"><img src="/images/1615808428-logo-lofficiel.svg" alt="" style="background-position: center;"></a>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; box-sizing: border-box; width: 100%;">
+            <a href="#" class="logo" style="flex: 1; text-align: center;">
+                <img src="/images/1615808428-logo-lofficiel.svg" alt="Logo" style="background-position: center; display: inline-block;">
+            </a>
+        
+            <div class="nav-links" style="display: flex; justify-content: flex-end; gap: 10px;">
+                <a href="#" style="color:white; text-decoration: none;  font-size: 16px;">Buy The Issue</a>
+                <a href="#" style="color:white; text-decoration: none; font-size: 16px;">France</a>
+            </div>
         </div>
-        <div class="nav-links">
-            <a href="#">Menu</a>
-            <a href="#">Buy The Issue</a>
-            <a href="#">France</a>
-        </div>
+        
     </nav>
 
     <section class="hero section">
@@ -312,9 +325,9 @@
 
 <section>
     <h2 style="margin-top: 400px; font-weight: lighter; font-size: 20px; margin-left: 50px; margin-bottom: 50px;">Trending</h2>
-    <div class="section" style="display: flex; justify-content: space-between; padding: 20px; max-width: 1200px; margin: auto;">
+    <div class="section" style="display: flex; justify-content: space-between; gap: 50px; padding: 20px; max-width: 1200px; margin: auto;">
 
-        <article style="width: 48%; text-align: left;">
+        <article style="width: 100%; text-align: left;">
             <img src="/images/1734643794-snapinsta-app_447996286_18439812613061284_3590454578625362646_n_1080.jpg" alt="BE WELL" style="width: 100%; height: auto; margin-bottom: 15px;">
             <a href="#" style="display: block; font-size: 12px; color: #555; text-transform: uppercase; margin-bottom: 5px;">BE WELL</a>
             <a href="#" style="display: block; font-size: 18px; font-weight: bold; color: #000; text-decoration: none; margin-bottom: 10px;">
@@ -324,7 +337,7 @@
         </article>
     
         
-        <article style="width: 48%; text-align: left;">
+        <article style="width: 100%; text-align: left;">
             <img src="/images/1734640073-justin-hailey-bieber-birthday-20221122_50-83127c2f9eb64ea58fac0fece37fe707.jpg" alt="FOOD" style="width: 100%; height: auto; margin-bottom: 15px;">
             <a href="#" style="display: block; font-size: 12px; color: #555; text-transform: uppercase; margin-bottom: 5px;">FOOD</a>
             <a href="#" style="display: block; font-size: 18px; font-weight: bold; color: #000; text-decoration: none; margin-bottom: 10px;">
