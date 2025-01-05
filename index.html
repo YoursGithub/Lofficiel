@@ -131,6 +131,12 @@
             gap: 1rem;
         }
 
+        .swiper-slide {
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center;   /* Center content vertically */
+    }
+
 
         .article-image {
             width: 50%;
@@ -214,13 +220,22 @@
         font-size: 2rem;
     }
 }
+
+
    
 
-@media screen and (max-width: 768px) {
-            .swiper-slide{
-                width: 600px;
-            }
+@media (max-width: 768px) {
+        .swiper-slide img {
+            width: 300px; 
+            height: auto; 
+            margin: 0 auto; 
         }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center; /* Center the slide content */
+        }
+    }
 
 @media (max-width: 768px) {
     .hide {
@@ -243,14 +258,14 @@
             
             <div style="position: relative; display: flex; margin-left: 10px; width: 200px;">
                 <input type="text" placeholder="RECHERCHER" style="
-    width: 100%; 
-    padding: 15px 50px 15px 20px; 
-    font-size: 16px; 
-    border: none;
-    border-radius: 25px; 
-    outline: none;
-    box-shadow: none;
-">
+                    width: 100%; 
+                    padding: 15px 50px 15px 20px; 
+                    font-size: 16px; 
+                    border: none;
+                    border-radius: 25px; 
+                    outline: none;
+                    box-shadow: none;
+                ">
             <i class="fa-solid fa-magnifying-glass" style="margin-top: 15px;"></i>
 
             </div>
@@ -327,7 +342,7 @@
         </div>
 
         <div class="content-grid" style="text-align: left;">
-            <article style="display: flex; align-items: flex-start; padding: 20px; border: 1px solid #eaeaea; margin-bottom: 20px;">
+            <article style="display: flex; align-items: flex-start; padding: 20px; margin-bottom: 20px;">
                 <img src="/images/image_34.jpeg" alt="BE WELL" style="width: 160px; height: 120px; object-fit: cover; margin-right: 20px;">
                 <div>
                     <a href="#" style="display: block; font-size: 12px; color: #555; text-transform: uppercase; margin-bottom: 5px;">BE WELL</a>
@@ -336,7 +351,7 @@
                 </div>
             </article>
             
-            <article style="display: flex; align-items: flex-start; padding: 20px; border: 1px solid #eaeaea; margin-bottom: 20px;">
+            <article style="display: flex; align-items: flex-start; padding: 20px;  margin-bottom: 20px;">
                 <img src="/images/dua.jpeg" alt="BE WELL" style="width: 160px; height: 120px; object-fit: cover; margin-right: 20px;">
                 <div>
                     <a href="#" style="display: block; font-size: 12px; color: #555; text-transform: uppercase; margin-bottom: 5px;">BE WELL</a>
@@ -345,7 +360,7 @@
                 </div>
             </article>
 
-            <article style="display: flex; align-items: flex-start; padding: 20px; border: 1px solid #eaeaea; margin-bottom: 20px;">
+            <article style="display: flex; align-items: flex-start; padding: 20px; margin-bottom: 20px;">
                 <img src="/images/image_51.jpeg" alt="BE WELL" style="width: 160px; height: 120px; object-fit: cover; margin-right: 20px;">
                 <div>
                     <a href="#" style="display: block; font-size: 12px; color: #555; text-transform: uppercase; margin-bottom: 5px;">BE WELL</a>
@@ -388,7 +403,7 @@
     <h2 style="margin-top: 200px; font-weight: lighter; font-size: 20px; margin-left: 50px; margin-bottom: 50px;">Dernière minute</h2>
 <div style="position: relative; width: 100%; height: 90vh; background: url('/images/1734511443-img_3996.png') no-repeat center center/cover; color: white; display: flex; justify-content: center; align-items: center;">
 
-    <div style="text-align: center; padding: 20px; border-radius: 8px;">
+    <div style="text-align: center; padding: 20px; ">
       <p style="font-size: 0.9rem; margin: 0; text-transform: uppercase; letter-spacing: 1px;">POP CULTURE</p>
       <h1 style="font-size: 2rem; margin: 10px 0;">Pourquoi a-t-on hâte de découvrir "Nosferatu" ?</h1>
       <p style="font-size: 0.8rem; margin: 0;">18.12.2024 by Pauline Borgogno</p>
@@ -399,7 +414,7 @@
 
 <section style="margin-top: 50px;">
     <div class="section" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 23px; padding: 20px; max-width: 1200px; margin: auto;">
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_23.jpeg" alt="Winter getaway" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Voyage</div>
@@ -408,7 +423,7 @@
             </div>
         </div>
 
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_24.jpeg" alt="Mocha Mousse" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Femmes</div>
@@ -417,7 +432,7 @@
             </div>
         </div>
 
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_25.jpeg" alt="Books" style="
 width: 100%; height: 250px;">
             <div style="padding: 15px;">
@@ -427,7 +442,7 @@ width: 100%; height: 250px;">
             </div>
         </div>
 
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_28.jpeg" alt="Books" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Pop Culture</div>
@@ -436,7 +451,7 @@ width: 100%; height: 250px;">
             </div>
         </div>
 
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_29.jpeg" alt="Books" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Pop Culture</div>
@@ -445,7 +460,7 @@ width: 100%; height: 250px;">
             </div>
         </div>
 
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_26.jpeg" alt="Books" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Pop Culture</div>
@@ -485,7 +500,7 @@ width: 100%; height: 250px;">
 <section style="margin-top: 50px;  font-family: 'Sen', sans-serif;">
     <h2 style="margin-top: 100px; font-weight: lighter; font-size: 20px; margin-left: 50px; margin-bottom: 50px;">À ne pas manquer</h2>
     <div class="section" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 23px; padding: 20px; max-width: 1200px; margin: auto;">
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_23.jpeg" alt="Winter getaway" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Voyage</div>
@@ -494,7 +509,7 @@ width: 100%; height: 250px;">
             </div>
         </div>
 
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_24.jpeg" alt="Mocha Mousse" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Femmes</div>
@@ -503,7 +518,7 @@ width: 100%; height: 250px;">
             </div>
         </div>
 
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_25.jpeg" alt="Books" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Pop Culture</div>
@@ -541,7 +556,7 @@ width: 100%; height: 250px;">
 <section style="margin-top: 50px;">
     <h2 style="margin-top: 100px; font-weight: lighter; font-size: 20px; margin-left: 50px; margin-bottom: 50px;">Pop culture</h2>
     <div class="section" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 23px; padding: 20px; max-width: 1200px; margin: auto;">
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_23.jpeg" alt="Winter getaway" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Voyage</div>
@@ -550,7 +565,7 @@ width: 100%; height: 250px;">
             </div>
         </div>
 
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_24.jpeg" alt="Mocha Mousse" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Femmes</div>
@@ -559,7 +574,7 @@ width: 100%; height: 250px;">
             </div>
         </div>
 
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_25.jpeg" alt="Books" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Pop Culture</div>
@@ -576,7 +591,7 @@ width: 100%; height: 250px;">
     <h2 style="margin-top: 200px; font-weight: lighter; font-size: 20px; margin-left: 50px; margin-bottom: 50px;">Industry Trends</h2>
 <div style="position: relative; width: 100%; height: 70vh; background: url('/images/bag.jpg') no-repeat center center/cover; color: white; display: flex; justify-content: center; align-items: center;">
 
-    <div style="text-align: center; margin-top: 200px; padding: 20px; border-radius: 8px;">
+    <div style="text-align: center; margin-top: 200px; padding: 20px; ">
       <p style="font-size: 1.2rem; margin: 0; text-transform: uppercase; letter-spacing: 1px;">POP CULTURE</p>
       <h1 style="font-size: 4rem; margin: 10px 0;">Pourquoi a-t-on hâte de découvrir "Nosferatu" ?</h1>
       <p style="font-size: 1rem; margin: 0;">18.12.2024 by Pauline Borgogno</p>
@@ -612,11 +627,9 @@ width: 100%; height: 250px;">
 
 <section style="margin-top: 100px;">
     <div style="position: relative; text-align: center; color: white; width: 100%; overflow: hidden;">
-        <!-- Background Image -->
         <img src="/images/image_234.jpeg" alt="Background" 
              style="width: 100%; height: auto; object-fit: cover; opacity: 0.85;">
         
-        <!-- Text Content -->
         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
             <p style="font-size: 20px; letter-spacing: 2px; text-transform: uppercase;">Femmes</p>
             <h1 style="font-size: 42px; font-weight: bold; margin: 10px 0;">Frazzled English Woman :</h1>
@@ -631,7 +644,7 @@ width: 100%; height: 250px;">
 
 <section style="margin-top: 50px;">
     <div class="section" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 23px; padding: 20px; max-width: 1200px; margin: auto;">
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_23.jpeg" alt="Winter getaway" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Voyage</div>
@@ -640,7 +653,7 @@ width: 100%; height: 250px;">
             </div>
         </div>
 
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_24.jpeg" alt="Mocha Mousse" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Femmes</div>
@@ -649,7 +662,7 @@ width: 100%; height: 250px;">
             </div>
         </div>
 
-        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <div style="flex: 1 1 calc(33.33% - 20px); margin: 0; background-color: #fff;   overflow: hidden;">
             <img src="/images/image_25.jpeg" alt="Books" style="width: 100%; height: 250px;">
             <div style="padding: 15px;">
                 <div style="color: #666; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;">Pop Culture</div>
@@ -662,37 +675,42 @@ width: 100%; height: 250px;">
 
 <section style="margin-top: 100px;">
     <div class="section" style="width: 100%; background-color: rgb(28, 28, 28); padding: 60px 0; min-height: 100vh; display: flex; justify-content: center;">      
-        <div class="section" style="width: 90%; max-width: 1200px; display: flex; justify-content: space-between;">
-            <div style="width: 48%;">
-                <h2 style="color: white; font-size: 25px;  text-align:center; font-weight: 400; margin-bottom: 40px; font-family: Arial, sans-serif;">Magazines</h2>
-                
-                <div class="swiper mySwiper" style="width: 100%; height: 350px;">
+        <div class="section-container" 
+            style="width: 90%; max-width: 1200px; display: flex; flex-wrap: wrap; justify-content: space-between;">
+            
+            <!-- Magazines Section -->
+            <div class="magazines-section" style="width: 48%; flex: 1; min-width: 300px; box-sizing: border-box;">
+                <h2 style="color: white; font-size: 25px; text-align: center; font-weight: 400; margin-bottom: 40px; font-family: Arial, sans-serif;">
+                    Magazines
+                </h2>
+                <div class="swiper mySwiper" style="width: 100%; height: auto;">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="width: 260px;">
-                            <img src="/images/1713967720-cover_jackson_wang_eshop.jpg" alt="Magazine 1" style="width: 100%; height: 350px; object-fit: cover;" />
+                        <div class="swiper-slide" style="width: 146.33px;">
+                            <img src="/images/1713967720-cover_jackson_wang_eshop.jpg" alt="Magazine 1" style="width:200px; height: 280px; object-fit: cover;" />
                         </div>
-                        <div class="swiper-slide" style="width: 260px;">
-                            <img src="/images/1711544836-e-shop_fr.jpg" alt="Magazine 2" style="width: 100%; height: 350px; object-fit: cover;" />
+                        <div class="swiper-slide" style="width: 146.33px;">
+                            <img src="/images/1711544836-e-shop_fr.jpg" alt="Magazine 2" style="width:200px; height: 280px; object-fit: cover;" />
                         </div>
-                        <div class="swiper-slide" style="width: 260px;">
-                            <img src="/images/1713341482-img_4043.jpeg" alt="Magazine 3" style="width: 100%; height: 350px; object-fit: cover;" />
+                        <div class="swiper-slide" style="width: 146.33px;">
+                            <img src="/images/1713341482-img_4043.jpeg" alt="Magazine 3" style="width:200px; height: 280px; object-fit: cover;" />
                         </div>
-                        <div class="swiper-slide" style="width: 260px;">
-                            <img src="/images/1717057274-img_5535.jpeg" alt="Magazine 3" style="width: 100% ; height: 350px; object-fit: cover;" />
+                        <div class="swiper-slide" style="width: 146.33px;">
+                            <img src="/images/1717057274-img_5535.jpeg" alt="Magazine 3" style="width:200px; height: 280px; object-fit: cover;" />
                         </div>
-                        <div class="swiper-slide" style="width: 260px;">
-                            <img src="/images/1719301890-img_6568.webp" alt="Magazine 3" style="width: 100% ; height: 350px; object-fit: cover;" />
+                        <div class="swiper-slide" style="width: 146.33px;">
+                            <img src="/images/1719301890-img_6568.webp" alt="Magazine 3" style="width:200px; height: 280px; object-fit: cover;" />
                         </div>
-                        <div class="swiper-slide" style="width: 260px;">
-                            <img src="/images/1713967720-cover_jackson_wang_eshop.jpg" alt="Magazine 3" style="width: 100%; height: 350px; object-fit: cover;" />
+                        <div class="swiper-slide" style="width: 146.33px;">
+                            <img src="/images/1713967720-cover_jackson_wang_eshop.jpg" alt="Magazine 3" style="width:200px; height: 280px; object-fit: cover;" />
                         </div>
                     </div>
-                    <div class="swiper-button-next" style="color: white;"></div>
                     <div class="swiper-button-prev" style="color: white;"></div>
+                    <div class="swiper-button-next" style="color: white;"></div>
                 </div>
             </div>
-    
-            <div style="width: 100%; max-width: 600px; margin: auto; text-align: center; padding: 20px; box-sizing: border-box;">
+            
+            <!-- Newsletter Section -->
+            <div class="newsletter-section" style="width: 48%; flex: 1; min-width: 300px; box-sizing: border-box; text-align: center; padding: 20px;">
                 <h2 style="color: white; font-size: 25px; text-align: center; font-weight: 400; margin-bottom: 40px; font-family: Arial, sans-serif;">
                     Newsletter
                 </h2>
@@ -724,13 +742,15 @@ width: 100%; height: 250px;">
             </div>
             
         </div>
+    </div>
 </section>
+
 
 <section style="background-color: #131312;">
 
     <div>
         <div style="display: flex; justify-content: center; align-items: center;">
-            <img src="/images/Loffecial_Peru-removebg-preview.png" alt="" width="400" height="400" style="margin-top: -100px;">
+            <img src="/images/Lofficiel Peru.png" alt="" width="400" height="400" style="margin-top: -100px;">
         </div>
 
         <div style="display: flex; justify-content: center; align-items: center; gap: 50px;">
@@ -755,28 +775,41 @@ width: 100%; height: 250px;">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
 
 
-    <script>
-         function toggleSidebar() {
-            const sidebar = document.getElementById("sidebar");
-            sidebar.style.display = sidebar.style.display === "block" ? "none" : "block";
-        }
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        sidebar.style.display = sidebar.style.display === "block" ? "none" : "block";
+    }
 
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
-            spaceBetween: 25,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
+    window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3, 
+                spaceBetween: 100,
             },
-        });
-    </script>
+            0: {
+                slidesPerView: 1, 
+                spaceBetween: 20,
+            },
+        },
+    });
+</script>
+
 </body>
 </html>
