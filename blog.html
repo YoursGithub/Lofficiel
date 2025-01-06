@@ -2,13 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Blog page</title>
 </head>
 
 <style>
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
     .images{
         margin-left: 120px;
     }
@@ -49,12 +56,12 @@
         }
       }
 
-      @media (min-width: 350px) and (max-width: 410px) {
+      /* @media (min-width: 350px) and (max-width: 410px) {
         .bottle{
             margin-left: 10px;
             width: 350px;
         }
-      }
+      } */
 </style>
 
 
@@ -198,7 +205,7 @@ style="
         <p style="margin: 0 auto; max-width: 600px; font-size: 16px; line-height: 1.6; color: #555;">La chanteuse et l’acteur semblent avoir officialisé leurs fiançailles pendant les fêtes. Entre amour discret et projets futurs, le couple enchante leurs fans avec cette grande annonce.</p>
         <p style="margin-top: 20px; font-size: 14px; color: #888;">30.12.2024 by Pauline Borgogno</p>
     </div>
-    <div class="bottle" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+    <div style="display: flex; justify-content: center; align-items: center; padding: 20px;">
         <img src="/images/dua.jpeg" alt="" style="width: 100%; max-width: 500px; height: 230px;">
     </div>
     <div class="bottle" style="margin: 0 auto; max-width: 800px; padding: 20px;">
@@ -264,7 +271,7 @@ style="
 
     <section style="position: relative;
       width: 100%;
-      min-width: 410px;
+      /* ; */
       /* height: 120vh; */
       ">
 
@@ -355,7 +362,7 @@ style="
           style="
            position: relative;
       width: 100%;
-      min-width: 410px;
+      /* ; */
             background-color: rgb(28, 28, 28);
             padding: 60px 0;
             display: flex;
@@ -578,7 +585,7 @@ style="
   
       <section style="position: relative;
       width: 100%;
-      min-width: 410px;
+      /* ; */
       height: 50vh; background-color: #131312">
         <div>
           <div
